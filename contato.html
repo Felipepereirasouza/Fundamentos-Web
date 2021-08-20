@@ -21,23 +21,27 @@
 
     <h1 class="center"> Entre em contato comigo </h1>
 
+   
     <div class="container">
 
         <div >
             <form id="formulario">
                 <label for="Nome">Nome:</label><br>
-                <input type="Nome" id="Nome">
+                <input type="Nome" id="Nome" onkeyup="valida()" >
+                <div id="text"></div>
                 <br>
                 <br>
-                <label for="E-mail">E-mail:</label><br>
-                <input type="email" id="E-mail">
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email"  onkeyup="validaEmail()" >
+                <div id="txtEmail"></div>
                 <br>
                 <br>
                 <label for="Assunto">Assunto:</label><br>
-                <textarea name="Assunto" id="Assunto" cols="60" rows="5"></textarea>
+                <textarea name="Assunto" id="Assunto" maxlength="10" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
                 <br>
                 <br>
-                <button>Enviar</button>
+                <button onclick="enviar()">Enviar</button>
 
             </form>
         </div>
@@ -51,7 +55,7 @@
 
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1353082312467!2d-46.68338588502216!3d-23.563583384681895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce579d45a95e2d%3A0x7608344a890bcfd0!2sR.%20C%C3%B4nego%20Eug%C3%AAnio%20Leite%2C%20623%20-%20ANDAR%202%20-%20Pinheiros%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005414-011!5e0!3m2!1spt-BR!2sbr!4v1629169628603!5m2!1spt-BR!2sbr"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()"  onmouseout="mapaNormal()" id="mapa" ></iframe>
 
         </div>
 
@@ -78,7 +82,7 @@
         </p>
     </footer>
 
-
+<script src="assets/js/scripts.js"></script>
 
 </body>
 
