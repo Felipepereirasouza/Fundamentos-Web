@@ -1,0 +1,97 @@
+/*
+Estilo da Pagina index.html
+
+*/
+
+/*body {
+    font-family: system-ui;
+    background: #be4c4c;
+    color: white;
+}*/
+
+.center{
+    text-align: center;
+}
+
+
+.container{
+
+    display: flex;
+    flex-flow: row ;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li{
+    display: inline;
+    padding: 15px;
+}
+
+#menu li a{
+
+    text-decoration: none;
+    color: chartreuse;
+    font-size: 20px;
+}
+
+#menu li a:hover{
+    color: deeppink;
+
+}
+
+#formulario label:hover{
+    color: deeppink;
+}
+
+.p-30{
+    padding: 30px;
+
+}
+
+.br-50{
+
+    border-radius: 50%;
+}
+
+.wh-300{
+width: 300px;
+height: 300px;
+
+}
+
+.tam-social{
+
+    width: 40px;
+    height: 40px;
+
+}
+
+.p-31{
+    padding-top: 1px;
+}
+
+.p-32{
+    padding-right: 20px;
+
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.justificado{
+
+    text-align:justify ;
+}
+
+/*
+
+Estilo da Pagina index.html
+
+*/
+
+.ml-50{
+
+    margin-left: 50px;
+
+}
